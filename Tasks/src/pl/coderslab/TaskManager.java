@@ -98,7 +98,7 @@ public class TaskManager {
         String dueDate = scan.nextLine();
         System.out.println("Is your task is important: true/false");
         String isImportant = scan.nextLine();
-//      Overwrite the arry
+//      Overwrite the array
         tasks = Arrays.copyOf(tasks, tasks.length + 1);
         tasks[tasks.length - 1] = new String[3];
         tasks[tasks.length - 1][0] = description;
@@ -137,7 +137,7 @@ public class TaskManager {
         try{
             Files.write(path, Arrays.asList(row));
         }catch (IOException e){
-            System.out.println("Nie można zapisać pliku");
+            System.out.println("The file could not be saved");
         }
     }
 }
